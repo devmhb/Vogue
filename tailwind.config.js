@@ -22,6 +22,13 @@ module.exports = {
         medium_lh: "1.09094em",
         large_lh: "1.07682em",
       },
+      fontWeight: {
+        light: "200",
+        normal: "400",
+        medium: "500",
+        semibold: "600",
+        bold: "700",
+      },
     },
   },
   variants: {},
