@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const HumburgerNav = () => {
   return (
-    <div className="px-6 py-4">
+    <div className="px-6 py-4 ">
       <div className="flex justify-between ">
         <div>
           <RxHamburgerMenu fontSize={"1.5rem"} cursor={"pointer"} />
