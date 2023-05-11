@@ -8,8 +8,10 @@ const RowLayout = ({ data }) => {
       <Title title={data.title} />
       <div className="flex flex-wrap justify-between py-6">
         {data.items.map((item) => (
-          <div className="max-w-[15rem]">
-            <PriCard item={item} key={item.id} />
+          <div className="lg:max-w-[15rem] w-full">
+            <div className="">
+              <PriCard item={item} key={item.id} />
+            </div>
           </div>
         ))}
       </div>

@@ -13,7 +13,7 @@ const Homepage = () => {
     items: [
       {
         id: 1,
-        url: "/images/img.avif",
+        url: "/images/img7.avif",
         subheading: "CORONATION",
         title: "The Princess Of Wales’s Alexander McQueen Coronation Gown",
         author: "BY EMILY CHAN",
@@ -431,8 +431,10 @@ const Homepage = () => {
       <div className="border-b">
         <HumburgerNav />
       </div>
-      <Navbar />
-      <HeroSec />
+      <div className="hidden md:hidden lg:block">
+        <Navbar />
+        <HeroSec />
+      </div>
       <div className="max-w-[90%] mx-auto">
         <SticktyLayout data={storiesData} />
         <RowLayout data={coronationData} />

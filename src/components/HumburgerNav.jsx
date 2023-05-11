@@ -10,13 +10,18 @@ const HumburgerNav = () => {
         <div>
           <RxHamburgerMenu fontSize={"1.5rem"} cursor={"pointer"} />
         </div>
-        <div className="pl-[7rem]">
-          <img src="/images/logo.svg" alt="" />
+        <div className="lg:pl-[7rem]">
+          <img src="/images/logo.svg" alt="" className="mx-auto" />
         </div>
         <div className="flex items-center gap-8">
           <Button text="SUBSCRIBE" />
           <div className="bg-[#E0E0E0] w-[1px] h-6"></div>
-          <Button text="SIGN IN" icon={<RxPerson />} />
+          <div className="hidden lg:block md:block">
+            <Button text="SIGN IN" icon={<RxPerson />} />
+          </div>
+          <div className="lg:hidden md:hidden">
+            <Button icon={<RxPerson />} />
+          </div>
           <BsSearch cursor={"pointer"} />
         </div>
       </div>

@@ -9,13 +9,13 @@ const SticktyLayout = ({ data }) => {
       <div className="py-6">
         <Title title={data.title} />
       </div>
-      <div className="flex">
-        <div className="basis-[50%] min-h-screen">
+      <div className="flex flex-col lg:flex-row">
+        <div className="">
           <SecCard item={data.item2} />
         </div>
-        <div className="basis-[50%] flex flex-wrap justify-evenly">
+        <div className="flex flex-wrap justify-evenly">
           {data.items.map((item) => (
-            <div className="max-w-[15rem]">
+            <div className="lg:max-w-[15rem] w-100% mt-5">
               <PriCard item={item} key={item.id} />
             </div>
           ))}

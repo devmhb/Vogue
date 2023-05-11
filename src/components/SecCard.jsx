@@ -3,7 +3,7 @@ import React from "react";
 const SecCard = ({ item }) => {
   return (
     <div
-      className="r min-h-[90vh] sticky top-0 left-0 text-white flex items-end"
+      className="h-[60vh] lg:min-h-[90vh] sticky top-0 left-0 text-white flex items-end"
       style={{
         backgroundImage: `url(${item.url})`,
         backgroundSize: `cover`,
