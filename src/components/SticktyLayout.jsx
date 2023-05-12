@@ -15,8 +15,8 @@ const SticktyLayout = ({ data }) => {
         </div>
         <div className="flex flex-wrap justify-evenly">
           {data.items.map((item) => (
-            <div className="lg:max-w-[15rem] w-100% mt-5">
-              <PriCard item={item} key={item.id} />
+            <div className="lg:max-w-[15rem] w-100% mt-5" key={item.id}>
+              <PriCard item={item} />
             </div>
           ))}
         </div>
