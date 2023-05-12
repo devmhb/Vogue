@@ -6,8 +6,12 @@ import SticktyLayout from "../components/SticktyLayout";
 import RowLayout from "../components/RowLayout";
 import SingleFeature from "../components/SingleFeature";
 import Footer from "../components/Footer";
+import { useState } from "react";
 
 const Homepage = () => {
+  const [showItems, setShowItems] = useState(false);
+  const showNavItems = () => setShowItems(!showItems);
+
   const storiesData = {
     title: "TOP STORIES",
     items: [
@@ -429,30 +433,40 @@ const Homepage = () => {
   return (
     <div>
       <div className="border-b">
-        <HumburgerNav />
+        <HumburgerNav
+          showItems={showItems}
+          showNavItems={showNavItems}
+          setShowItems={setShowItems}
+        />
       </div>
-      <div className="hidden md:hidden lg:block">
-        <Navbar />
-        <HeroSec />
-      </div>
-      <div className="max-w-[90%] mx-auto">
-        <SticktyLayout data={storiesData} />
-        <RowLayout data={coronationData} />
-        <SingleFeature item={tvContent} />
-        <RowLayout data={fashionData} />
-        <SingleFeature item={fashionContent} />
-        <RowLayout data={newsData} />
-        <SticktyLayout data={shoppingData} />
-        <RowLayout data={beautyData} />
-        <SingleFeature item={royalsContent} />
-        <RowLayout data={artslifestylesData} />
-        <SingleFeature item={skincareContent} />
-        <RowLayout data={weddingData} />
-        <SingleFeature item={viewpointContetn} />
-        <RowLayout data={jewelleryData} />
-      </div>
-      <div className="bg-black">
-        <Footer />
+      <div>
+        {!showItems && (
+          <>
+            <div className="hidden md:hidden lg:block">
+              <Navbar />
+              <HeroSec />
+            </div>
+            <div className="max-w-[90%] mx-auto">
+              <SticktyLayout data={storiesData} />
+              <RowLayout data={coronationData} />
+              <SingleFeature item={tvContent} />
+              <RowLayout data={fashionData} />
+              <SingleFeature item={fashionContent} />
+              <RowLayout data={newsData} />
+              <SticktyLayout data={shoppingData} />
+              <RowLayout data={beautyData} />
+              <SingleFeature item={royalsContent} />
+              <RowLayout data={artslifestylesData} />
+              <SingleFeature item={skincareContent} />
+              <RowLayout data={weddingData} />
+              <SingleFeature item={viewpointContetn} />
+              <RowLayout data={jewelleryData} />
+            </div>
+            <div className="bg-black">
+              <Footer />
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

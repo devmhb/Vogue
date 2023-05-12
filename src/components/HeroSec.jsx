@@ -12,7 +12,6 @@ const HeroSec = () => {
         <video
           className="h-[70vh] w-full"
           src="/The 10 best dressed from the Met Gala 2023 _ Bazaar UK.mp4"
-          autoPlay
         />
       </div>
     </div>
