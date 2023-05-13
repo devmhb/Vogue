@@ -432,7 +432,7 @@ const Homepage = () => {
 
   return (
     <div>
-      <div className="border-b">
+      <div className="border-b h-16 sticky top-0 left-0 right-0 z-[99] bg-white">
         <HumburgerNav
           showItems={showItems}
           showNavItems={showNavItems}

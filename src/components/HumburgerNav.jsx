@@ -5,6 +5,7 @@ import { RxCross2 } from "react-icons/rx";
 import Button from "./Button";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import Icon from "./Icon";
+import { Link } from "react-router-dom";
 
 const HumburgerNav = ({ showItems, showNavItems }) => {
   return (
@@ -16,7 +17,7 @@ const HumburgerNav = ({ showItems, showNavItems }) => {
           </div>
         </div>
         {showItems && (
-          <div className=" min-h-screen min-w-full">
+          <div className=" min-h-screen min-w-full py-4">
             <div className="pb-3 shadow">
               <div className=" flex flex-row px-6">
                 <RxCross2
@@ -63,7 +64,9 @@ const HumburgerNav = ({ showItems, showNavItems }) => {
         <div className="flex items-center gap-8">
           {!showItems && (
             <>
-              <Button text="SUBSCRIBE" />
+              <Link to="/subscribe">
+                <Button text="SUBSCRIBE" />
+              </Link>
               <div className="bg-[#E0E0E0] w-[1px] h-6"></div>
               <div className="hidden lg:block md:block">
                 <Button text="SIGN IN" icon={<RxPerson />} />
