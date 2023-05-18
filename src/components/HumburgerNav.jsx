@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const HumburgerNav = ({ showItems, showNavItems }) => {
   return (
-    <div className={`${!showItems ? "px-6" : ""} py-4 `}>
+    <div className={`${!showItems ? "px-6" : ""} py-6 `}>
       <div className="flex justify-between ">
         <div className="cursor-pointer" onClick={showNavItems}>
           <div className="max-h-[4px]">

@@ -71,7 +71,24 @@ const SubscribeCard = ({
           {secInfo}
         </div>
 
-        <div className="px-10 py-2"></div>
+        <div className="px-10 mt-3">
+          {button && (
+            <div className="text-center">
+              <button className="bg-red-600 text-white px-12 py-4 ">
+                START NOW
+              </button>
+            </div>
+          )}
+          {global && (
+            <div className="text-center">
+              <h3>DOWNLOAD NOW</h3>
+              <div className="flex justify-center gap-4">
+                <img src="/images/subscribe_appstore.png" alt="img" />
+                <img src="/images/subscribe_googleplay.png" alt="img" />
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

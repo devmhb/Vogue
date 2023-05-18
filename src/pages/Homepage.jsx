@@ -12,6 +12,13 @@ const Homepage = () => {
   const [showItems, setShowItems] = useState(false);
   const showNavItems = () => setShowItems(!showItems);
 
+  // const NavItems = [
+  //   {
+  //     id: 1,
+  //     item: "Fashion",
+  //   },
+  // ];
+
   const storiesData = {
     title: "TOP STORIES",
     items: [

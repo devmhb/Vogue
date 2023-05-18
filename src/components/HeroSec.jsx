@@ -10,6 +10,8 @@ const HeroSec = () => {
       />
       <div className="bg-black ">
         <video
+          autoPlay
+          muted
           className="h-[70vh] w-full"
           src="/The 10 best dressed from the Met Gala 2023 _ Bazaar UK.mp4"
         />
