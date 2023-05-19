@@ -16,28 +16,28 @@ const Navbar = ({ logourl, search, hidden }) => {
       <ul
         className={`hidden font-semibold text-xsmall text-light_black tracking-wide lg:flex gap-4 md:hidden`}
       >
-        <Link to="/category">
+        <Link to="/category/fashion">
           <li>FASHION</li>
         </Link>
-        <Link to="/category">
+        <Link to="/category/arts">
           <li>ARTS & LIFESTYLE</li>
         </Link>
-        <Link to="/category">
+        <Link to="/category/runway">
           <li>RUNWAY</li>
         </Link>
-        <Link to="/category">
+        <Link to="/category/shopping">
           <li>SHOPPING</li>
         </Link>
-        <Link to="/category">
+        <Link to="/category/news">
           <li>NEWS</li>
         </Link>
-        <Link to="/category">
+        <Link to="/category/video">
           <li>VIDEO</li>
         </Link>
-        <Link to="/category">
+        <Link to="/category/shop">
           <li>VOGUE SHOP</li>
         </Link>
-        <Link to="/category">
+        <Link to="/category/club">
           <li>VOGUE CLUB</li>
         </Link>
       </ul>

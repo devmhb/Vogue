@@ -1,10 +1,11 @@
 import React from "react";
 import HumburgerNav from "../components/HumburgerNav";
 import Navbar from "../components/Navbar";
-import PriCard from "../components/PriCard";
 import Footer from "../components/Footer";
+import { useParams } from "react-router-dom";
 
 const PostDetails = () => {
+  const { title } = useParams();
   return (
     <div>
       <div className="shadow min-h-[4rem] sticky top-0 left-0 bg-white">
@@ -23,9 +24,7 @@ const PostDetails = () => {
 
           <div className="basis-[60%] text-center">
             <p className="text-[17px] m-6">FASHION</p>
-            <h1 className=" font-semibold text-6xl">
-              “I Don’t Think There Should Be Any Beauty Rules”
-            </h1>
+            <h1 className=" font-semibold text-6xl">{title}</h1>
             <p className="text-[17px] m-2">BY TISH WEINSTOCK</p>
             <p className="text-[17px] m-2">16 May 2023</p>
           </div>

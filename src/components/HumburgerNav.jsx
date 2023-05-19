@@ -25,7 +25,9 @@ const HumburgerNav = ({ showItems, showNavItems }) => {
                   cursor={"pointer"}
                   onClick={showNavItems}
                 />
-                <img src="/images/logo.svg" alt="logo" className="mx-auto" />
+                <Link to="/">
+                  <img src="/images/logo.svg" alt="logo" className="mx-auto" />
+                </Link>
               </div>
             </div>
             <ul className="border-b border-black px-5 py-6 font-semibold text-base flex flex-col gap-6 text-light_black  gap-4 ">

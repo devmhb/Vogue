@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const SecCard = ({ item }) => {
   return (
-    <Link to="postdetails">
+    <Link to={`/${item.title}`}>
       <div
         className="h-[60vh] lg:min-h-[90vh] sticky top-0 left-0 text-white flex items-end"
         style={{

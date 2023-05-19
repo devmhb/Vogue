@@ -4,8 +4,11 @@ import Navbar from "../components/Navbar";
 import Title from "../components/Title";
 import Footer from "../components/Footer";
 import HumburgerNav from "../components/HumburgerNav";
+import { useParams } from "react-router-dom";
 
 const CategoryPage = () => {
+  const { name } = useParams();
+  console.log(name);
   const shoppingData = {
     title: "SHOPPING",
     items: [
@@ -73,7 +76,7 @@ const CategoryPage = () => {
       <div className="max-w-[90%] mx-auto">
         <div>
           <Title
-            title="Fashion"
+            title={name}
             center="text-center"
             space="py-10"
             lg="text-6xl"

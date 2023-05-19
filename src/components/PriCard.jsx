@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const PriCard = ({ item }) => {
   return (
-    <Link to="/postdetails">
+    <Link to={`/${item.title}`}>
       <div className="pb-6 flex justify-between gap-6 min-w-full lg:block">
         <div className="basis-[50%]">
           <img src={item.url} alt="img" className="max-w-full h-auto" />

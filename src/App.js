@@ -12,8 +12,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/subscribe" element={<Subscribe />} />
-          <Route path="/category" element={<CategoryPage />} />
-          <Route path="/postdetails" element={<PostDetails />} />
+          <Route path="/category/:name" element={<CategoryPage />} />
+          <Route path="/:title" element={<PostDetails />} />
         </Routes>
       </Router>
     </div>
